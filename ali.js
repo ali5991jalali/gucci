@@ -1,4 +1,3 @@
 let names=['amsb','akshha']
-for (name of names){
-    console.log(name)
-}
+names.push(["lajskajskaksalsalks"])
+console.log(names)

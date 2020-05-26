@@ -1,3 +1,4 @@
+// Functions
 module.exports = {
     sort: (data) => {
         let result = data;
@@ -12,5 +13,15 @@ module.exports = {
             sum += number;
         }
         return sum / (data.length);
+    },
+    unique: (data) => {
+        let result = [];
+        data.forEach(item => {
+            if (!result.includes(item)) result.push(item);
+        });
+        return result;
+    },
+    uniqueNumbers: (data) => {
+                
     }
 }
