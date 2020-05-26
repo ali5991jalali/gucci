@@ -22,6 +22,14 @@ module.exports = {
         return result;
     },
     uniqueNumbers: (data) => {
-                
+        let result = {};
+        data.forEach((item) => {
+            if (!Object.keys(result).includes(item)) {
+                result[item] = 1;
+            } else {
+                result[item] += 1;
+            }
+        })
+        return result;
     }
 }
