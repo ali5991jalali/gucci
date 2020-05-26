@@ -32,9 +32,11 @@ module.exports = {
         })
         return result;
     },
-    sort: (data) => {
+    sort: (data, type = 'desc') => {
+        if (!/^(asc|desc)$/.test(type)) throw Error('Invalid data type');
         data.sort((a, b) => {
-            return a - b;
+            if (type == 'desc') return b - a;
+            else return a - b;
         })
         return data;
     }
