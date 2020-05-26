@@ -1,6 +1,6 @@
 // Functions
 module.exports = {
-    sort: (data) => {
+    reverse: (data) => {
         let result = data;
         result.reverse();
         return result;
@@ -31,5 +31,11 @@ module.exports = {
             }
         })
         return result;
+    },
+    sort: (data) => {
+        data.sort((a, b) => {
+            return a - b;
+        })
+        return data;
     }
 }

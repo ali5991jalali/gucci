@@ -1,15 +1,9 @@
-let names = ['amsb', 2,'akshha','ali','ali',2,5]
-function uniqueNumbers(data) {
-    let result = {};
-    data.forEach((item) => {
-        if (!Object.keys(result).includes(item)) {
-            result[item] = 1;
-        } else {
-            result[item] += 1;
-        }
+let names = ['asas',5,3,2,63]
+const sort = (data) => {
+    data.sort((a, b) => {
+        return b-a;
     })
-    return result;
+    return data;
 }
 
-
-console.log(uniqueNumbers(names))
+console.log(sort(names))
